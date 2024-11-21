@@ -1,0 +1,40 @@
+@import url(contactanos.html);
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    float: right;
+    font-size: 20px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(119, 80, 151, 0.9);
+    transition: all 0.5s;
+    transform: translateX(100%);
+}
+
+.menu a {
+    display: block;
+    color: white;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgb(154, 130, 177);
+}
+
+.menu a:hover {
+    background: rgba(153, 127, 196, 0.986);
+}
+
+#menu-bar:checked ~ .menu {
+    transform: translateX(70%);
+}
